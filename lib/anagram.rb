@@ -7,8 +7,8 @@ attr_accessor :word
     @word = word
   end
 
-  def match(words)
-    words.find_all do |word|
+  def match(words_in_array)
+    words_in_array.find_all do |word|
       if word.split("").sort == self.word_to_analyze.split("").sort
         word
     end
