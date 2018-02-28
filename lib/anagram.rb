@@ -9,7 +9,7 @@ attr_accessor :word
 
   def match(words_in_array)
     words_in_array.find_all do |word|
-      if word.split("").sort == self.word_to_analyze.split("").sort
+      if word.split("").sort == self.word.split("").sort
         word
     end
   end
